@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeRide India - Report Safety Concern</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SafeRide India</div>
+    <nav>
+        <a href="city-selection.html">Home</a>
+        <a href="safety-alerts.html">Alerts</a>
+        <a href="#">My Trips</a>
+        <a href="report.html">Report</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="container report-section">
+
+    <!-- LEFT SIDE INFO -->
+    <div class="report-info">
+        <h1>Report a Safety <span class="highlight">Concern</span></h1>
+        <p>
+            Your real-time feedback helps Hyderabad Transit Authority 
+            prioritize safety interventions.
+        </p>
+
+        <div class="info-box emergency">
+            <strong>Emergency Protocol:</strong>
+            Dial 100 or 112 for life-threatening situations.
+        </div>
+
+        <div class="info-box location">
+            <strong>Live Location Mapping:</strong>
+            Report is automatically geofenced to your route.
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="report-form">
+
+        <form id="complaintForm">
+
+            <label>Issue Category</label>
+            <select required>
+                <option value="">Select concern</option>
+                <option>Overcrowding</option>
+                <option>Women Safety</option>
+                <option>Service Delay</option>
+                <option>Emergency</option>
+                <option>Harassment</option>
+                <option>Maintenance</option>
+            </select>
+
+            <div class="form-row">
+                <div>
+                    <label>Auto-detected Route</label>
+                    <input type="text" value="218D - Patancheru" readonly>
+                </div>
+
+                <div>
+                    <label>Timestamp</label>
+                    <input type="text" id="timestamp" readonly>
+                </div>
+            </div>
+
+            <label>Describe the Concern</label>
+            <textarea rows="4" 
+                placeholder="Enter bus number, location details, etc..."
+                required></textarea>
+
+            <button type="submit" class="primary-btn">
+                Submit Complaint
+            </button>
+
+            <p class="small-text">
+                By submitting, you agree to share your GPS coordinates with authorities.
+            </p>
+
+        </form>
+
+        <div class="live-feed">
+            🔴 4 active reports in your area
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2024 SafeRide India | Smart Public Transit Crowd Management
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeRide India - Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">🛡️ SafeRide India</div>
+        <nav>
+            <a href="city-selection.html">Home</a>
+            <a href="safety-alerts.html">Alerts</a>
+            <a href="#">My Trips</a>
+            <a href="report.html">Report</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="page-wrapper">
+
+        <div class="booking-layout">
+
+            <!-- ========== LEFT COLUMN : ROUTE DETAILS ========== -->
+            <section class="route-section">
+
+                <div class="page-header">
+                    <h1>Review & Book Ticket</h1>
+                    <p class="route-label">Route: JBS → WaveRock (Line 402)</p>
+                </div>
+
+                <!-- BUS CARD -->
+                <div class="bus-card">
+
+                    <div class="bus-top">
+                        <div>
+                            <h3>Bus Line 402 - Express</h3>
+                            <p class="sub-text">Daily Service | Smart Transit</p>
+                        </div>
+                        <span class="vehicle-badge">TS-09-UB-4202</span>
+                    </div>
+
+                    <div class="route-timeline">
+
+                        <div class="stop">
+                            <div class="dot"></div>
+                            <div class="stop-info">
+                                <strong>Jubilee Bus Station (JBS)</strong>
+                                <span>Departure: 10:00 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="stop">
+                            <div class="dot"></div>
+                            <div class="stop-info">
+                                <strong>Ameerpet Interchange</strong>
+                                <span>Arrival: 10:20 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="stop active-stop">
+                            <div class="dot"></div>
+                            <div class="stop-info">
+                                <strong>WaveRock SEZ</strong>
+                                <span>Arrival: 10:45 AM</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CROWD WARNING -->
+                <div class="warning">
+                    ⚠ Moderate crowd expected (65% occupancy)
+                </div>
+
+            </section>
+
+
+            <!-- ========== RIGHT COLUMN : FARE & PAYMENT ========== -->
+            <aside class="fare-section">
+
+                <div class="fare-card">
+
+                    <h3>Fare Breakdown</h3>
+
+                    <div class="fare-row">
+                        <span>Base Fare</span>
+                        <span>₹45.00</span>
+                    </div>
+
+                    <div class="fare-row">
+                        <span>Reservation</span>
+                        <span>₹5.00</span>
+                    </div>
+
+                    <div class="fare-row">
+                        <span>Tax (5%)</span>
+                        <span>₹2.50</span>
+                    </div>
+
+                    <div class="fare-row total">
+                        <span>Total</span>
+                        <span>₹52.50</span>
+                    </div>
+
+                    <div class="seat-info">
+                        Confirmed Seat: Row 4 - Window (A1)
+                    </div>
+
+                    <button id="bookBtn" class="primary-btn">
+                        Proceed to Book Ticket
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= SUCCESS SECTION ================= -->
+    <section id="successSection" class="success hidden">
+
+        <div class="success-card">
+            <h2>Ticket Booked Successfully!</h2>
+            <p>Please show this QR code to conductor.</p>
+
+            <div class="qr-box">
+                QR-CODE
+            </div>
+
+            <p><strong>Ticket ID:</strong> #492019</p>
+            <p><strong>Date:</strong> <span id="ticketDate"></span></p>
+
+            <button class="primary-btn">Download Receipt</button>
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        © 2024 SafeRide India | Smart Transit System
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

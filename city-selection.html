@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeRide India - City Selection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">🛡️ SafeRide India</div>
+        <nav>
+            <a href="city-selection.html">Home</a>
+            <a href="safety-alerts.html">Alerts</a>
+            <a href="#">My Trips</a>
+            <a href="report.html">Report</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <h1>Select Your City & Transport</h1>
+        <p class="subtitle">
+            Choose your preferred mode of travel to get real-time crowd and safety updates.
+        </p>
+
+        <!-- City Dropdown -->
+        <div class="city-select">
+            <label>Current City</label>
+                <select id="city">
+                    <option>Hyderabad</option>
+                    <option>Mumbai</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                </select>
+        </div>
+
+        <!-- Transport Grid -->
+        <div class="transport-grid">
+
+            <a href="journey.html" class="transport-link">
+                <div class="transport-card">
+                    <h3>TSRTC Bus</h3>
+                    <p>City-wide bus network</p>
+                </div>
+            </a>
+
+            <a href="journey.html" class="transport-link">
+                <div class="transport-card">
+                    <h3>Hyderabad Metro</h3>
+                    <p>Fast metro connectivity</p>
+                </div>
+            </a>
+
+            <a href="journey.html" class="transport-link">
+                <div class="transport-card">
+                    <h3>MMTS Train</h3>
+                    <p>Suburban train network</p>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
