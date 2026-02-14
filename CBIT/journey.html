@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeRide India - Plan Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SafeRide India</div>
+    <nav>
+        <a href="city-selection.html">Home</a>
+        <a href="safety-alerts.html">Alerts</a>
+        <a href="#">My Trips</a>
+        <a href="report.html">Report</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="main-section">
+    <h1>Plan Your Safe Journey</h1>
+    <p>Smart commute across Hyderabad with real-time crowd alerts.</p>
+
+    <div class="card">
+
+        <label>Origin</label>
+        <input type="text" id="origin" placeholder="e.g., Hitech City">
+
+        <label>Destination</label>
+        <input type="text" id="destination" placeholder="e.g., Secunderabad">
+
+        <label>Departure Time</label>
+        <div class="time-buttons">
+            <button class="active" onclick="selectTime(this)">Now</button>
+            <button onclick="selectTime(this)">Schedule</button>
+        </div>
+
+        <button id="checkCrowdBtn" class="primary-btn">
+            Check Crowd & Fare
+        </button>
+
+
+    </div>
+</section>
+
+<footer>
+    © 2024 SafeRide India | Hyderabad Case Study
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

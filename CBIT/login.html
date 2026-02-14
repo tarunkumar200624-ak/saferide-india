@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeRide India - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">🚍 SafeRide India</div>
+        <nav>
+            <a href="city-selection.html">Home</a>
+            <a href="safety-alerts.html">Alerts</a>
+            <a href="#">My Trips</a>
+            <a href="report.html">Report</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+ 
+
+    <!-- Main Section -->
+    <main class="main-container">
+
+        <h1>SafeRide India</h1>
+        <p class="tagline">Predicting Crowd Surges. Guiding Safer Journeys.</p>
+
+        <div class="login-card">
+            <form id="loginForm">
+
+                <label>Mobile Number or Email</label>
+                <input type="text" id="email" placeholder="Enter your phone or email" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <div class="preferences">
+                    <h3>Safety Preferences</h3>
+
+                    <div class="toggle-row">
+                        <span>Enable Women Safety Alerts</span>
+                        <input type="checkbox" id="womenSafety">
+                    </div>
+
+                    <div class="toggle-row">
+                        <span>Enable Elderly-Friendly Suggestions</span>
+                        <input type="checkbox" id="elderlySafety">
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-btn">Login / Continue</button>
+                <button type="button" class="secondary-btn">Create New Account</button>
+
+            </form>
+        </div>
+
+        <footer class="footer">
+            Currently optimizing commutes in Hyderabad
+        </footer>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

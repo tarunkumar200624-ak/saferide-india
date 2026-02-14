@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeRide India - Public Safety Alerts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SafeRide India</div>
+    <nav>
+        <a href="city-selection.html">Home</a>
+        <a href="safety-alerts.html">Alerts</a>
+        <a href="#">My Trips</a>
+        <a href="report.html">Report</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <div class="page-header">
+        <h1>Public Safety Alerts</h1>
+        <p>Hyderabad Metro & Bus Network Monitor</p>
+    </div>
+
+    <!-- High Risk Alert -->
+    <div class="alert-card high-risk">
+
+        <div class="alert-header">
+            <span class="risk-label">HIGH RISK</span>
+        </div>
+
+        <h2>Raidurg Metro Station (Blue Line)</h2>
+        <p>Station capacity exceeded. Entry restrictions in effect.</p>
+
+        <div class="recommendations">
+            <h4>Recommendations</h4>
+            <ul>
+                <li>Use HITEC City station as alternative.</li>
+                <li>Expect 30-minute boarding delays.</li>
+            </ul>
+        </div>
+
+        <div class="alert-buttons">
+            <button class="primary-btn">View Alternatives</button>
+            <button class="secondary-btn">Report Issue</button>
+        </div>
+
+    </div>
+
+    <!-- Nearby Alternatives -->
+    <h3 class="section-title">Nearby Alternatives</h3>
+
+    <div class="alternative-item">
+        <div>
+            <strong>MMTS Local Train</strong>
+            <p>Hi-Tech City Station</p>
+        </div>
+        <span class="status clear">Clear</span>
+    </div>
+
+    <div class="alternative-item">
+        <div>
+            <strong>TSRTC Bus #127Z</strong>
+            <p>To Secunderabad</p>
+        </div>
+        <span class="status moderate">Moderate</span>
+    </div>
+
+    <div class="alternative-item">
+        <div>
+            <strong>Metro Red Line</strong>
+            <p>Miyapur Route</p>
+        </div>
+        <span class="status crowded">Crowded</span>
+    </div>
+
+</section>
+
+<footer>
+    © 2024 SafeRide India | Live data from HMRL & TSRTC
+</footer>
+
+
+<button onclick="goToReport()" class="secondary-btn">
+    Report Issue
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

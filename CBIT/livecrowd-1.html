@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeRide India - Route Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SafeRide India</div>
+    <nav>
+        <a href="city-selection.html">Home</a>
+        <a href="safety-alerts.html">Alerts</a>
+        <a href="#">My Trips</a>
+        <a href="report.html">Report</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="route-section">
+
+    <h1>Secunderabad — Hitech City</h1>
+    <p class="sub-text">AC Express Route 127K • Platform 4</p>
+
+    <h2>Upcoming Buses</h2>
+
+    <div class="bus-card selected">
+        <div class="bus-info">
+            <div><strong>Arrival:</strong> 4 mins</div>
+            <div class="high"><strong>Crowd:</strong> High</div>
+            <div class="high"><strong>Seats:</strong> 2 left</div>
+            <div><strong>Fare:</strong> ₹45</div>
+        </div>
+    </div>
+
+    <div class="bus-card" onclick="selectBus(this)">
+        <div class="bus-info">
+            <div><strong>Arrival:</strong> 18 mins</div>
+            <div class="low"><strong>Crowd:</strong> Low</div>
+            <div><strong>Seats:</strong> 24 left</div>
+            <div><strong>Fare:</strong> ₹45</div>
+        </div>
+    </div>
+
+    <div class="bus-card" onclick="selectBus(this)">
+        <div class="bus-info">
+            <div><strong>Arrival:</strong> 35 mins</div>
+            <div class="medium"><strong>Crowd:</strong> Medium</div>
+            <div><strong>Seats:</strong> 10 left</div>
+            <div><strong>Fare:</strong> ₹45</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="proceedBookingBtn" class="primary-btn">Proceed to Booking</button>
+        <button id="viewPredictionBtn" class="secondary-btn">View Crowd Prediction</button>
+    </div>
+
+    <div class="travel-tip">
+        <strong>Travel Intelligence:</strong>
+        Wait for the 18-minute bus to get a guaranteed seat and low crowd.
+    </div>
+
+</section>
+
+<footer>
+    © 2024 SafeRide India | Hyderabad Case Study
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
